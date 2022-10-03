@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<style>
+   
+    table{
+        margin-left: 450px;
+        margin: 30px auto;
+    }
+    h1{
+        color: brown;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight:lighter;
+    }
+    
+    body{
+       
+        background-image: url(https://fondosmil.com/fondo/8517.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+</style>
+<body>
+    <h1>CALCULADORA EJERCICIOS</h1>
+    <table>
+        <tr>
+            <td colspan="5"><input id="result"></td>
+        </tr>
+        <tr>
+            <td><button id="divisores" onclick="sgc.divisores()">divisores</button></td>
+            <td><button id="invertir" onclick="sgc.invertir()">invertir</button></td>
+            <td><button id="primo" onclick="sgc.primo()">primo</button></td>
+            <td><button id="perfecto" onclick="sgc.perfecto()">perfecto</button></td>
+            <td><button id="fibonachi" onclick="sgc.fibonachi()">fibonachi</button></td>
+        </tr>
+        <tr>
+            <td><button id="base 10 a 2" onclick="sgc.base10_2()">base 10  a 2</button></td>
+            <td><button id="base 10 a 16" onclick="sgc.base10_16()">base 10 a 16</button></td>
+            <td><button id="base 10 a 8" onclick="sgc.base10_8()">base 10 a 8</button></td>
+            <td><button id="base 2 a 10" onclick="sgc.base2_10()">base 2 a 10</button></td>
+            <td><button id="base 2 a 16" onclick="sgc.base2_16()">base 2 a 16</button></td>
+        </tr>
+        <tr>
+            <td><button id="contar palabra" onclick="sgc.contar_palabra()">contar palabras</button></td>
+            <td><button id="palindroma" onclick="sgc.palindroma()">palindroma</button></td>
+            <td><button id="invertir frase" onclick="sgc.invertir_frase()">invertir frases</button></td>
+            <td><button id="contar caracteres" onclick="sgc.contar_caracteres()">contar caracteres</button></td>
+            <td><button id="buscar cadena" onclick=" sgc.buscar_cadena()">Buscar cadena</button></td>
+        </tr>
+        <tr>
+            <td><button id="mayor arreglo" onclick="sgc.mayor_arreglo()">Mayor arreglo</button></td>
+            <td><button id="promedio arreglo" onclick="sgc.promedio_arreglo()">promedio arreglo</button></td>
+            <td><button id="buscar arreglo" onclick="sgc.buscar_arreglo()">Buscar arreglo</button></td>
+            <td><button id="eliminar arreglo" onclick="sgc.eliminar_arreglo()">eliminar elemento de arreglo</button></td>
+            <td><button id="insertar arreglo" onclick="sgc.insertar_arreglo()">insentar elemento arreglo</button></td>
+        </tr>
+        <tr>
+            <td colspan="5"><button type="button" onclick="sgc.limpiar()">AC</button></td>
+        </tr>
+    </table>
+    <script src="../ejercicios/calculadora.js"></script>
+</body>
+</html>
